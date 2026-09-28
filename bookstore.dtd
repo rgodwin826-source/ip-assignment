@@ -1,0 +1,62 @@
+<!ELEMENT bookstore (book+)>
+
+<!ATTLIST bookstore
+    storeName CDATA #REQUIRED
+    location CDATA #REQUIRED
+    establishedYear CDATA #REQUIRED
+>
+
+<!ELEMENT book (
+    title,
+    author,
+    category,
+    publisher,
+    publication,
+    pricing,
+    inventory
+)>
+
+<!ATTLIST book
+    bookId ID #REQUIRED
+    isbn CDATA #REQUIRED
+>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT author (firstName, lastName)>
+
+<!ELEMENT firstName (#PCDATA)>
+
+<!ELEMENT lastName (#PCDATA)>
+
+<!ELEMENT category (#PCDATA)>
+
+<!ELEMENT publisher (name, year)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT year (#PCDATA)>
+
+<!ELEMENT publication (edition, language, pages)>
+
+<!ELEMENT edition (#PCDATA)>
+
+<!ELEMENT language (#PCDATA)>
+
+<!ELEMENT pages (#PCDATA)>
+
+<!ELEMENT pricing (price, discount)>
+
+<!ELEMENT price (#PCDATA)>
+
+<!ATTLIST price
+    currency CDATA #REQUIRED
+>
+
+<!ELEMENT discount (#PCDATA)>
+
+<!ELEMENT inventory (quantity, availability)>
+
+<!ELEMENT quantity (#PCDATA)>
+
+<!ELEMENT availability (#PCDATA)>

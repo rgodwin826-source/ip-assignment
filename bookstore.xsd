@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+    <xs:element name="bookstore">
+
+        <xs:complexType>
+
+            <xs:sequence>
+
+                <xs:element name="book" maxOccurs="unbounded">
+
+                    <xs:complexType>
+
+                        <xs:sequence>
+
+                            <xs:element
+                                name="title"
+                                type="xs:string"/>
+
+                            <xs:element name="author">
+
+                                <xs:complexType>
+
+                                    <xs:sequence>
+
+                                        <xs:element
+                                            name="firstName"
+                                            type="xs:string"/>
+
+                                        <xs:element
+                                            name="lastName"
+                                            type="xs:string"/>
+
+                                    </xs:sequence>
+
+                                </xs:complexType>
+
+                            </xs:element>
+
+                            <xs:element
+                                name="category"
+                                type="xs:string"/>
+
+                            <xs:element name="publisher">
+
+                                <xs:complexType>
+
+                                    <xs:sequence>
+
+                                        <xs:element
+                                            name="name"
+                                            type="xs:string"/>
+
+                                        <xs:element
+                                            name="year"
+                                            type="xs:gYear"/>
+
+                                    </xs:sequence>
+
+                                </xs:complexType>
+
+                            </xs:element>
+
+                            <xs:element name="publication">
+
+                                <xs:complexType>
+
+                                    <xs:sequence>
+
+                                        <xs:element
+                                            name="edition"
+                                            type="xs:positiveInteger"/>
+
+                                        <xs:element
+                                            name="language"
+                                            type="xs:string"/>
+
+                                        <xs:element
+                                            name="pages"
+                                            type="xs:positiveInteger"/>
+
+                                    </xs:sequence>
+
+                                </xs:complexType>
+
+                            </xs:element>
+
+                            <xs:element name="pricing">
+
+                                <xs:complexType>
+
+                                    <xs:sequence>
+
+                                        <xs:element name="price">
+
+                                            <xs:complexType>
+
+                                                <xs:simpleContent>
+
+                                                    <xs:extension
+                                                        base="xs:decimal">
+
+                                                        <xs:attribute
+                                                            name="currency"
+                                                            type="xs:string"
+                                                            use="required"/>
+
+                                                    </xs:extension>
+
+                                                </xs:simpleContent>
+
+                                            </xs:complexType>
+
+                                        </xs:element>
+
+                                        <xs:element
+                                            name="discount"
+                                            type="xs:decimal"/>
+
+                                    </xs:sequence>
+
+                                </xs:complexType>
+
+                            </xs:element>
+
+                            <xs:element name="inventory">
+
+                                <xs:complexType>
+
+                                    <xs:sequence>
+
+                                        <xs:element
+                                            name="quantity"
+                                            type="xs:nonNegativeInteger"/>
+
+                                        <xs:element
+                                            name="availability"
+                                            type="xs:string"/>
+
+                                    </xs:sequence>
+
+                                </xs:complexType>
+
+                            </xs:element>
+
+                        </xs:sequence>
+
+                        <xs:attribute
+                            name="bookId"
+                            type="xs:ID"
+                            use="required"/>
+
+                        <xs:attribute
+                            name="isbn"
+                            type="xs:string"
+                            use="required"/>
+
+                    </xs:complexType>
+
+                </xs:element>
+
+            </xs:sequence>
+
+            <xs:attribute
+                name="storeName"
+                type="xs:string"
+                use="required"/>
+
+            <xs:attribute
+                name="location"
+                type="xs:string"
+                use="required"/>
+
+            <xs:attribute
+                name="establishedYear"
+                type="xs:gYear"
+                use="required"/>
+
+        </xs:complexType>
+
+    </xs:element>
+
+</xs:schema>

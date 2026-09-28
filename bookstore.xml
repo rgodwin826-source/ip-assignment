@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+
+<bookstore
+    storeName="Knowledge Hub Bookstore"
+    location="Chennai, Tamil Nadu"
+    establishedYear="2018">
+
+    <book
+        bookId="BK001"
+        isbn="9780135166307">
+
+        <title>Java: The Complete Reference</title>
+
+        <author>
+            <firstName>Herbert</firstName>
+            <lastName>Schildt</lastName>
+        </author>
+
+        <category>Programming</category>
+
+        <publisher>
+            <name>McGraw Hill</name>
+            <year>2021</year>
+        </publisher>
+
+        <publication>
+            <edition>12</edition>
+            <language>English</language>
+            <pages>1248</pages>
+        </publication>
+
+        <pricing>
+            <price currency="INR">899.00</price>
+            <discount>10</discount>
+        </pricing>
+
+        <inventory>
+            <quantity>25</quantity>
+            <availability>In Stock</availability>
+        </inventory>
+
+    </book>
+
+    <book
+        bookId="BK002"
+        isbn="9781492051367">
+
+        <title>Head First Java</title>
+
+        <author>
+            <firstName>Kathy</firstName>
+            <lastName>Sierra</lastName>
+        </author>
+
+        <category>Programming</category>
+
+        <publisher>
+            <name>O'Reilly Media</name>
+            <year>2022</year>
+        </publisher>
+
+        <publication>
+            <edition>3</edition>
+            <language>English</language>
+            <pages>754</pages>
+        </publication>
+
+        <pricing>
+            <price currency="INR">799.00</price>
+            <discount>15</discount>
+        </pricing>
+
+        <inventory>
+            <quantity>18</quantity>
+            <availability>In Stock</availability>
+        </inventory>
+
+    </book>
+
+    <book
+        bookId="BK003"
+        isbn="9780134448237">
+
+        <title>Python Crash Course</title>
+
+        <author>
+            <firstName>Eric</firstName>
+            <lastName>Matthes</lastName>
+        </author>
+
+        <category>Python</category>
+
+        <publisher>
+            <name>No Starch Press</name>
+            <year>2023</year>
+        </publisher>
+
+        <publication>
+            <edition>3</edition>
+            <language>English</language>
+            <pages>544</pages>
+        </publication>
+
+        <pricing>
+            <price currency="INR">699.00</price>
+            <discount>12</discount>
+        </pricing>
+
+        <inventory>
+            <quantity>30</quantity>
+            <availability>In Stock</availability>
+        </inventory>
+
+    </book>
+
+    <book
+        bookId="BK004"
+        isbn="9780262046305">
+
+        <title>Introduction to Artificial Intelligence</title>
+
+        <author>
+            <firstName>Stuart</firstName>
+            <lastName>Russell</lastName>
+        </author>
+
+        <category>Artificial Intelligence</category>
+
+        <publisher>
+            <name>Pearson Education</name>
+            <year>2020</year>
+        </publisher>
+
+        <publication>
+            <edition>2</edition>
+            <language>English</language>
+            <pages>1152</pages>
+        </publication>
+
+        <pricing>
+            <price currency="INR">999.00</price>
+            <discount>8</discount>
+        </pricing>
+
+        <inventory>
+            <quantity>12</quantity>
+            <availability>Limited Stock</availability>
+        </inventory>
+
+    </book>
+
+    <book
+        bookId="BK005"
+        isbn="9781119454847">
+
+        <title>Web Development with HTML CSS and JavaScript</title>
+
+        <author>
+            <firstName>Jon</firstName>
+            <lastName>Duckett</lastName>
+        </author>
+
+        <category>Web Development</category>
+
+        <publisher>
+            <name>Wiley</name>
+            <year>2022</year>
+        </publisher>
+
+        <publication>
+            <edition>2</edition>
+            <language>English</language>
+            <pages>640</pages>
+        </publication>
+
+        <pricing>
+            <price currency="INR">749.00</price>
+            <discount>10</discount>
+        </pricing>
+
+        <inventory>
+            <quantity>20</quantity>
+            <availability>In Stock</availability>
+        </inventory>
+
+    </book>
+
+</bookstore>
